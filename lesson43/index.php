@@ -1,7 +1,7 @@
 <?php
 
-header('Content-type: text/html; charset=utf-8'); ?>
-<?
+header('Content-type: text/html; charset=utf-8');
+
 ini_set('display_error', true);
 error_reporting(E_ALL);
 
@@ -33,7 +33,7 @@ $worker2->name = 'Вася';
 $worker2->age = '26';
 $worker2->salary = '2000';
 echo 'Cумма зарплат Ивана и Васи:';
-echo $worker1->salary + $worker2->salary.'<br>';
+echo $worker1->salary + $worker2->salary .'<br>';
 
 echo '<br><hr>';
 echo '';
