@@ -13,7 +13,7 @@ error_reporting(E_ALL);
 //Выведите на экран сумму зарплат Ивана и Васи. Выведите на экран сумму возрастов Ивана и Васи.
 
 
-class Worker1
+class Worker
 {
 	public $name;
 	public $age;
@@ -22,12 +22,12 @@ class Worker1
 
 }
 // Создание объектов класса
-$worker1 = new Worker1();
+$worker1 = new Worker();
 $worker1->name = 'Иван';
 $worker1->age = '25';
 $worker1->salary = '1000';
 
-$worker2 = new Worker1;
+$worker2 = new Worker;
 $worker2->name = 'Вася';
 $worker2->age = '26';
 $worker2->salary = '2000';
@@ -38,3 +38,4 @@ echo '<br><hr>';
 echo 'сумму возрастов Ивана и Васи.';
 echo $worker1->age + $worker2->age;
 echo '<br><hr>';
+
