@@ -1,0 +1,14 @@
+Теория -
+
+http://theory.phphtml.net/books/php/oop/osnovy-raboty-s-objektno-orientirovannym-programmirovaniem-v-php-1.html
+
+Практика
+
+http://theory.phphtml.net/tasks/php/oop/osnovy-raboty-s-objektno-orientirovannym-programmirovaniem-v-php-1.html
+
+<?php
+header('Content-type: text/html; charset=utf-8');
+
+ini_set('display_error', true);
+error_reporting(E_ALL);
+
