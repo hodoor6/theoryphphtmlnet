@@ -25,54 +25,10 @@
 
 6. Сделайте класс Student, который наследует от класса User и вносит дополнительные private поля стипендия, курс, а также геттеры и сеттеры для них. 
 Сделайте класс Driver (Водитель), который будет наследоваться от класса Worker из предыдущей задачи. Этот метод должен вносить следующие private поля: водительский стаж, категория вождения (A, B, C). 
+
 Практика
 
 7. Создайте класс Form - оболочку для создания форм. Он должен иметь методы input, submit, password, textarea, open, close. Каждый метод принимает массив атрибутов. 
-
-Примеры использования: 
-
-<?php
-	echo $form->input(['type'=>'text', 'value'=>'!!!']);
-	//Код выше выведет <input type="text" value="!!!">
-
-	echo $form->password(['value'=>'!!!']);
-	//Код выше выведет <input type="password" value="!!!">
-
-	echo $form->submit(['value'=>'go']);
-	//Код выше выведет <input type="submit" value="go">
-
-	echo $form->textarea(['placeholder'=>'123', 'value'=>'!!!']);
-	//Код выше выведет <textarea placeholder="123">!!!</textarea>
-
-	echo $form->open(['action'=>'index.php', 'method'=>'POST']);
-	//Код выше выведет <form action="index.php" method="POST">
-
-	echo $form->close();
-	//Код выше выведет </form>
-?>
-
-Передаваемые атрибуты могут быть любыми: 
-
-<?php
-	echo $form->input(['type'=>'text', 'value'=>'!!!', 'class'=>'ggg']);
-	//Код выше выведет <input type="text" value="!!!" class="ggg">
-?>
-Для решения задачи сделайте private метод, который параметром будет принимать массив, например, ['type'=>'text', 'value'=>'!!!'] и делать из него строку с атрибутами, в нашем случае type="text" value="!!!". 
-Пример создания формы с помощью нашего класса: 
-<?php
-	echo $form->open(['action'=>'index.php', 'method'=>'POST']);
-	echo $form->input(['type'=>'text', 'placeholder'=>'Ваше имя', 'name'=>'name']);
-	echo $form->password(['placeholder'=>'Ваш пароль', 'name'=>'pass']);
-	echo $form->submit(['value'=>'Отправить']);
-	echo $form->close();
-?>
-
-В результате получится следующая форма: 
-
-<form action="index.php" method="POST">
-	<input type="text" placeholder="Ваше имя" name="name">
-	<input type="text" placeholder="Ваш пароль" name="pass">
-</form>
 
 8. Создайте класс SmartForm, который будет наследовать от Form из предыдущей задачи и сохранять значения инпутов и textarea после отправки. 
 То есть если мы сделали форму, нажали на кнопку отправки - то значения из инпутов не должны пропасть. Мало ли что-то пойдет не так, например, форма некорректно заполнена, а введенные данные из нее пропали и их следует вводить заново. Этого следует избегать. 
