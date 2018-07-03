@@ -13,14 +13,12 @@
 <div>
 	<p>
 		<span class="-task-"></span>
-
 2. <b>Удалите куку</b> с именем <b>country</b>.
 	</p>
 </div>
 <div>
 	<p>
 		<span class="-task-"></span>
-
 3. <b>Установите куку</b> с именем <b>age</b>. 
 		Запишите туда случайное число от <b>10</b> до <b>70</b> 
 		(с помощью <a href="/php/math/mt_rand.html">mt_rand</a>). 
